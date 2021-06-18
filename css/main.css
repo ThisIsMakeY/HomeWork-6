@@ -1,0 +1,96 @@
+/* ==========Задание 1========== */
+.pink, .blue, .green {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.pink {
+    background-color: rgb(206, 95, 114);
+}
+
+.blue {
+    background-color: rgb(99, 99, 231);
+    bottom: 40px;
+    left: 60px;
+    z-index: 1;
+}
+
+.green {
+    background-color: rgb(95, 212, 95);
+    bottom: 80px;
+    left: 120px;
+}
+
+/* =========Задание 2========== */
+h1 {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+h2 {
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+}
+
+h3 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    z-index: 2;
+}
+
+/* ==========Задание 3========== */
+.card-box {
+    width: 500px;
+    height: 500px;
+    background-color: #0d5825;
+    position: relative;
+    text-align: center;
+    color: aliceblue;
+    font-size: 23px;
+    padding-top: 20px;
+}
+
+blockquote {
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.card-box div {
+    background-image: url(../img/card01.png);
+    background-size: 100%;
+    width: 120px;
+    height: 180px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: transform .3s;
+}
+
+.card-left {
+    transform: translate(-80%, -20%) rotate(-25deg);
+}
+
+.card-center {
+    transform: translate(-50%, -20%) rotate(-10deg);
+}
+
+.card-right {
+    transform: translate(-10%, -10%) rotate(10deg);
+}
+
+.card-left:hover {
+    transform: translate(-80%, -35%) rotate(-25deg);
+}
+
+.card-center:hover {
+    transform: translate(-50%, -35%) rotate(-10deg);
+}
+
+.card-right:hover {
+    transform: translate(-10%, -25%) rotate(10deg);
+}
